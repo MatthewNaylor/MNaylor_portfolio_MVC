@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "jsFactorial";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center text-bold">
+            <p>This exercise will calculate the Factorial of any number under 171</p>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 text-bold">Enter a number:</div>
+                <div class="col-md-6">
+                    <input id="input" type="number" />
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <button id="btnCalc" class="btn btn-primary">Calculate</button>
+                </div>
+                <div class="col-md-6">
+                    <button id="btnClear" class="btn btn-success">Clear</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12 text-center text-bold">Output</div>
+            </div>
+            <hr />
+            <div class="row text-center">
+                <p  class="text-bold" id="output"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+@section scripts {
+
+    <script>
+
+        $("#btnClear").click(function () {
+            $("#input").val("");
+            $("#output").text("");
+        });
+
+        $("#btnCalc").click(function () {
+            //Step 1: Get the user data
+            var input = Number($("#input").val());
+
+            //Step 2: Do something with it
+            var output = input;
+
+            if (input > 0) {
+                for (var loop = input - 1; loop > 1; loop--) {
+                    output *= loop;
+                }
+            }
+            else if (input == 0) {
+                output = 1;
+            }
+            else {
+                output = "undefined";
+            }
+
+
+            //Step 3: Inform the user
+            $("#output").text("The factorial of " + input + " is " + output);
+
+        });
+
+
+
+    </script>
+
+}
+
+
+

@@ -1,0 +1,937 @@
+﻿
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="background-100-e">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="Matthew Naylor's Portfolio" />
+    <meta name="keywords" content="Matthew Naylor, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="~/bower_components/minicolors/jquery.minicolors.css" />
+    <link rel="stylesheet" href="~/bower_components/slick.js/slick/slick.css" />
+    <link rel="stylesheet" href="~/bower_components/slick.js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="~/bootstrap/dist/css/bootstrap-custom.min.css" />
+    <link rel="stylesheet" href="~/lib/linecons/style.css" />
+    <link rel="stylesheet" href="~/styles/style.min.css" />
+    <link rel="stylesheet" href="~/theme-custom.css" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="~/Scripts/SyntaxHighlighter/styles/shThemeMidnight.css" rel="stylesheet" />
+    <link href="~/Content/Custom.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Images/MN.png" /> type="image/x-icon" />
+    <link rel="apple-touch-icon" href="~/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="~/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="~/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="~/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="~/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="~/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="~/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="~/apple-touch-icon-152x152.png" />
+</head>
+<body class="state1 background-100-e">
+    <div class="ext-nav background-95-h page-transition">
+        <div class="view half-height">
+            <img class="bg static" src="~/Images/White.png"/>
+            <div class="content no-top-padding no-bottom-padding  full-height">
+                <div class="container-fluid  full-height">
+                    <div class="row full-height">
+                        <a target="_blank" href="https://mnblog.azurewebsites.net/" class="col-md-12 colors-e background-95-e full-height">
+                            <div>
+                                <span class="side-label">All The Latest</span>
+                                <span class="side-title">Blog</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-border bottom colors-e background-solid"><a href="#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
+    <div class="page-border left colors-e background-solid">
+        <ul></ul>
+    </div>
+    <!-- BEGIN: Top menu -->
+    <div class="page-border right colors-e background-solid"></div>
+    <nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="#"><span></span></a>
+                <a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#"><span></span></a>
+                <a class="navbar-brand" href="">MATTHEW'S<span class="highlight"> PORTFOLIO</span></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="hover-effect">Home</a></li>
+                    <li><a href="#about" class="hover-effect">About</a></li>
+                    <li><a href="#team" class="hover-effect">Resume</a></li>
+                    <li><a href="#work" class="hover-effect">Work</a></li>
+                    <li><a href="#contact" class="hover-effect">Contact</a></li>
+                    <li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="#"><span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Top menu -->
+    <ul id="dot-scroll" class="colors-e background-solid"></ul>
+    <div class="overlay-window gallery-overlay colors-f background-95-f" data-overlay-zoom="#work .content">
+        <div class="overlay-control background-85-d">
+            <a class="previos" href="#"></a>
+            <a class="next" href="#"></a>
+            <a class="cross" href="#"></a>
+        </div>
+        <div class="overlay-view"></div>
+        <ul class="loader">
+            <li class="background-100-d"></li>
+            <li class="background-100-d"></li>
+            <li class="background-100-d"></li>
+        </ul>
+    </div>
+    <div class="overlay-window map-overlay colors-f background-95-f">
+        <div class="overlay-control background-90-f">
+            <a class="cross" href="#"></a>
+        </div>
+        <div class="overlay-view">
+            <div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
+                <div class="map-marker" data-latitude="42.487606" data-longitude="-71.115661" data-text="Our awesome location"></div>
+                <div class="map-marker" data-latitude="42.485100" data-longitude="-71.113256" data-text="Our sales office"></div>
+            </div>
+        </div>
+    </div>
+    <div class="gate colors-e background-solid">
+        <div class="gate-bar background-highlight-e"></div>
+        <ul class="loader">
+            <li class="background-100-g"></li>
+            <li class="background-90-c"></li>
+            <li class="background-100-f"></li>
+        </ul>
+    </div>
+    <!-- BEGIN: Page content -->
+    <div class="youtube-bg" data-video="2zLQI4Dfi_w" data-mute="yes" data-volume="50" data-alternative="images/placeholders/1920x1200-0.jpg"></div>
+    <section id="home">
+        <div class="view">
+            <div class="content home-mary full-size colors-a">
+                <div class="container">
+                    <div class="textillate text-center heading  hidden-xs hidden-sm" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
+                        <ul class="texts">
+                            <li>I Am A Programmer</li>
+                            <li>I Am A Coder</li>
+                            <li>I Am A Developer</li>
+                        </ul>
+                    </div>
+                    <h1 class="text-center">I Am <span class="highlight">Matthew</span> Naylor</h1>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="lead text-center">
+
+                            </p>
+                            <p class="text-center"><a href="#about" class="button background-60-d heading-d border-hard">About Me</a><a href="#work" class="button background-60-f heading-f border-hard">My Work</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="view">
+            <img class="bg" src="~/Images/White.png" />
+        </div>
+        <div class="view">
+            <img class="bg" <img src="~/Images/White.png" />
+            <div class="content colors-e">
+                <div class="container">
+                    <h2>About</h2>
+                    <p class="header-details"><span class="highlight">A Few Things</span> About Me</p>
+                    <p class="lead">Let me tell you a little bit about myself and how I grew up. So both of my parents and the majority of their family grew up in the country working on hog farms and tobacco fields and they never really had technology like we have today so they dont really know things about technology like I do. I never received any type of technology until my 6th grade year of middle school where I got my first phone and an Xbox 360. Ever since then I have been in love with technology looking for the best new products with all kinds of new features to come out such as phones, computers, smart home accessories, or smart wearable devices to mess around with them and learn what I can from them. Being the only person in my family that really know things about technology means my family and my aunts and uncles and cousins usually come to me for help when they cant figure somthing out which is why I chose this field so that I could make or work on things for the people who can't do what I do.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="col-content">
+                                <h4>Video <span class="highlight">Games</span></h4>
+                                <p class="text-justify">When I got my first gaming console in the 6th grade I instintly fell in love I would literally go to school and when I got home I would finish my home work as fast as I could and then I would play until it was time to go to bed and then I would do it all over again the next day. I never stopped playing games I even still play them today because of how much I enjoy them and I most likley will keep playing until I just dont have any time left in my days to play them.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-content">
+                                <h4>Star <span class="highlight">Wars</span></h4>
+                                <p class="text-justify">The first Star Wars movie that I saw was Star Wars Episode 2 Attack of the Clones and ever since then I have been a huge Star Wars fan. I have movies, games, posters, and even pins of Star Wars and if somthing new comes out about Star Wars you better believe that i'm going to go see it, play it, or go to it whatever it may be but I will be there.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-content">
+                                <h4>Disn<span class="highlight">ey</span></h4>
+                                <p class="text-justify">I am a big Disney fan, some people may think its wierd for a guy to be a fan of Disney like I am but I dont think its wierd at all. I like watching the movies and going to the parks there is just somthing about them that brings joy and happiness. I will always enjoys going to Disney World no matter how old I get and I can't wait to go in 2020 to visit the new Star Wars Galaxy's Edge land they just made.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="view">
+            <div class="content colors-h">
+                <div class="container">
+                    <h2>Resume</h2>
+                    <p class="header-details"><span class="highlight">What </span>I've Done</p>
+                    <p class="lead">A look at my recent <strong class="highlight">work history</strong></p>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6  col-xs-6">
+                            <div class="hover-overlay">
+                                <img alt="Matthew Naylor" src="~/images/2228.jpeg" title="Matthew Naylor" class="fluid-width">
+                                <div class="overlay background-90-b">
+                                    <div>
+                                        <p class="text-center text-uppercase heading-b">
+                                            Look at my<a target="_blank" href="~/Matthew Naylor.pdf"> resume</a> or my linked in account
+                                        </p>
+                                        <div class="separator-small"></div>
+                                        <p class="text-center">
+                                            <a target="_blank" href="https://www.linkedin.com/in/MatthewBNaylor/"><i class="fa fa-linkedin heading-b"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <p>
+                                    <span class="title">Matthew Naylor</span>
+                                    <br />
+                                    <span class="highlight">Jr. Software Dev.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><span class="highlight"></span><br /></h3>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <p class="text-center"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view" id="who-we-are">
+            <div class="content pane">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 stretch-height pane">
+                            <div class="view fluid-height">
+                                <img class="bg" src="~/images/lake-forest-1.jpg" />
+                                <div class="content incut colors-d background-transparent">
+                                    <div class="position-middle-center text-center">
+                                        <a class="button background-lite-c heading-c" href="#work">View My Work</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="view">
+            <img class="bg" src="~/images/island.jpg" /><img class="bg" src="~/images/water.jpg" /><img class="bg" src="~/images/Super-Autumn-Wallpaper.jpeg.jpg" />
+            <div class="content half-size colors-h">
+                <div class="container">
+                    <div class="show-list slogan">
+                        <div class="show-item">I Am A Designer</div>
+                        <div class="show-item">I Am A Programmer</div>
+                        <div class="show-item">I Am A Coder</div>
+                        <div class="show-item">I Am A Developer</div>
+                    </div>
+                    <div class="separator"></div>
+                    <p class="text-center big-font">
+                        <em></em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work">
+        <div class="view">
+            <img class="bg" src="~/images/placeholders/1920x1200-2.jpg" /><img class="bg" src="~/images/placeholders/1920x1200-0.jpg" />
+            <div class="content no-bottom-padding colors-e">
+                <div class="container">
+                    <h2>My <span class="highlight">Work</span></h2>
+                    <p class="header-details"><span class="highlight">Some Recent</span> Projects</p>
+                    <p class="lead">These are the projects I have created</p>
+                </div>
+                <div class="gallery background-e" data-default-group="all">
+                    <div class="container-fluid">
+                        @*<div class="filter">
+                            <ul class="nav nav-pills text-center">
+                                <li><a class="hover-effect" data-group="all" href="#">All</a></li>
+                                <li><a class="hover-effect" data-group="web" href="#">Web</a></li>
+                                <li><a class="hover-effect" data-group="design" href="#">Design</a> </li>
+                            </ul>
+                        </div>*@
+                        <div class="row">
+                            <div class="grid">
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["design"]'>
+                                    <a href="#myModal" data-toggle="modal" class="hover-overlay">
+                                        <img alt="Java Script" src="~/images/EzgdmaCQuT84bgDL4fhXZS.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
+                                    <a id="BlogLink" class="hover-overlay">
+                                        <img alt="Blog"  img src="~/Images/blog.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
+                                    <a href="#!portfolio-item-3.html" class="hover-overlay img-responsive">
+                                        <img alt="Admin" img src="~/images/coming soon2.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
+                                    <a href="#!portfolio-item-4.html" class="hover-overlay">
+                                        <img alt="Bug Tracker" img src="~/images/coming soon.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
+                                    <a href="#!portfolio-item-5.html" class="hover-overlay">
+                                        <img alt="Project 5" src="~/images/coming soon.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-4 col-sm-4 col-xs-6" data-groups='["photography", "web", "design"]'>
+                                    <a href="#!portfolio-item-6.html" class="hover-overlay">
+                                        <img alt="Project 6" src="~/images/coming soon2.jpg" />
+                                    </a>
+                                </div>
+                                @*<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design", "video", "web"]'>
+                                    <a href="#!portfolio-item-7.html" class="hover-overlay">
+                                        <img alt="Project 7" src="~/images/water.jpg" />
+                                    </a>
+                                </div>
+                                <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web"]'>
+                                    <a href="#!portfolio-item-8.html" class="hover-overlay">
+                                        <img alt="Project 8" src="~/images/water.jpg" />
+                                    </a>
+                                </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="view">
+            <div class="content full-size colors-h">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p class="header-details">Keep In Touch</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-right scroll-in-animation" data-animation="fadeInLeft">
+                                <p class="big-font uppercase">
+                                    Interested? Send me an Email and I will get back to you as soon as I possibly can.
+                                </p>
+                            </div>
+                        </div>
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="col-md-6">
+                                <div class="text-left scroll-in-animation" data-animation="fadeInRight">
+                                    <form class="ajax-form" data-message-class="colors-d background-95 heading border" action="contact.php" method="post" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-md-6 control-group">
+                                                <div class="alt-placeholder">Name</div>
+                                                <input type="text" name="FromName" value="" size="40" placeholder="Name" data-validation-required-message="Please fill the required field." required>
+                                                <div class="help-block"></div>
+                                            </div>
+                                            <div class="col-md-6 control-group">
+                                                <div class="alt-placeholder">Email</div>
+                                                <input type="email" name="FromEmail" value="" size="40" placeholder="Email" data-validation-required-message="Please fill the required field." required>
+                                                <div class="help-block"></div>
+                                            </div>
+                                            <div class="col-md-12 control-group">
+                                                <div class="alt-placeholder">Message</div>
+                                                <textarea name="Subject" placeholder="Subject" data-validation-required-message="Please fill the required field." required></textarea>
+                                                <div class="help-block"></div>
+                                            </div>
+                                            <div class="col-md-12 control-group">
+                                                <div class="alt-placeholder">Message</div>
+                                                <textarea name="Body" placeholder="Message" data-validation-required-message="Please fill the required field." required></textarea>
+                                                <div class="help-block"></div>
+                                            </div>
+                                            <div class="col-md-12 form-actions">
+                                                <input class="button" type="submit" value="Send">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Page content -->
+    <!-- BEGIN: Footer -->
+    <footer class="colors-g page-transition non-preloading">
+        <div class="container scroll-in-animation" data-animation="fadeInDown">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Additional Links</h5>
+                    <ul class="simple">
+                        <li><a target="_blank" href="https://mnblog.azurewebsites.net/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- END: Footer -->
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="container-fluid">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a class="bluetab" id="Sumhide" data-toggle="pill" href="#Sum">Sum</a></li>
+                            <li><a class="bluetab" data-toggle="pill" id="Factorialhide" href="#Factorial">Factorial</a></li>
+                            <li><a class="bluetab" data-toggle="pill" id="Fizz-Buzzhide" href="#Fizz-Buzz">FizzBuzz</a></li>
+                            <li><a class="bluetab" data-toggle="pill" id="Reversehide" href="#Reverse">Palindrome</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="Sum" class="tab-pane fade in active">
+
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 h2 text-center">
+                                            <h3>Sum Calculator</h3>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-offset-2 text-bold">Enter any numbers</div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="row">
+                                                <div class="col-md-4">Number 1</div>
+                                                <div class="col-md-4">
+                                                    <input id="number1" />
+                                                </div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="row">
+                                                <div class="col-md-4">Number 2</div>
+                                                <div class="col-md-4">
+                                                    <input id="number2" />
+                                                </div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="row">
+                                                <div class="col-md-4">Number 3</div>
+                                                <div class="col-md-4">
+                                                    <input id="number3" />
+                                                </div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="row">
+                                                <div class="col-md-4">Number 3</div>
+                                                <div class="col-md-4">
+                                                    <input id="number4" />
+                                                </div>
+                                            </div>
+
+                                            <br />
+
+                                            <div class="row">
+                                                <div class="col-md-4">Number 5</div>
+                                                <div class="col-md-4">
+                                                    <input id="number5" />
+                                                </div>
+                                            </div>
+                                            <br />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <br />
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <button id="btnMath" class="btn btnWide btn-success">Calculate</button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div class="row">
+                                                <div class=" col-md-10">
+                                                    <button id="btnClear" class="btn btnWide btn-danger">Clear</button>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <button id="btnCodeSum" class="btn btnWide btn-warning">Show/Hide Code</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-height text-bold">Here are your results</div>
+                                            </div>
+
+
+                                            <hr />
+
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-bold">
+                                                    <p id="sum"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-bold">
+                                                    <p id="min"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-bold">
+                                                    <p id="max"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-bold">
+                                                    <p id="mean"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-offset-4 text-bold">
+                                                    <p id="multi"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr id="hrSum" />
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div id="divSum">
+                                                    <pre class="brush: js">
+                                                         //step 1: Acquire the user input
+                                                         $("#btnMath").click(function () {
+
+                                                            var number1 = Number($("#number1").val());
+                                                            var number2 = Number($("#number2").val());
+                                                            var number3 = Number($("#number3").val());
+                                                            var number4 = Number($("#number4").val());
+                                                            var number5 = Number($("#number5").val());
+
+                                                            //step 2: Do somthing with it
+                                                            var sum = number1 + number2 + number3 + number4 + number5;
+
+                                                            var min = Math.min(number1, number2, number3, number4, number5);
+
+                                                            var max = Math.max(number1, number2, number3, number4, number5);
+
+                                                            var number = [number1, number2, number3, number4, number5];
+                                                            var total = 0;
+                                                            for (var i = 0; i < number.length; i++) {
+                                                                total += number[i];
+                                                            }
+                                                            var mean = total / number.length;
+
+                                                            var numbera = Number($("#number1").val());
+                                                            var numberb = Number($("#number2").val());
+                                                            var numberc = Number($("#number3").val());
+                                                            var numberd = Number($("#number4").val());
+                                                            var numbere = Number($("#number5").val());
+
+                                                            var multi = numbera * numberb * numberc * numberd * numbere;
+
+
+                                                            //step 3: Out the results to the screen
+                                                            $("#sum").text("Sum = " + sum);
+                                                            $("#min").text("Minimum number is " + min);
+                                                            $("#max").text("Maximum number is " + max);
+                                                            $("#mean").text("Mean is " + mean);
+                                                            $("#multi").text("Multiplied total is " + multi);
+
+                                                          });
+                                                        </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Factorial" class="tab-pane fade">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center text-bold">
+                                            <h3>Factorial Exercise</h3>
+                                            <div class="row">
+                                                <p>This exercise will calculate the Factor of any number under 171</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 text-bold">Enter a number:</div>
+                                                    <div class="col-md-4">
+                                                        <input id="input" />
+                                                    </div>
+                                                </div>
+
+                                                <br />
+
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <button id="btnCalc" class="btn btnWide btn-success">Calculate</button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button id="btnClear1" class="btn btnWide btn-danger">Clear</button>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button id="btnCodeFactorial" class="btn center btnWide btn-warning">Show/Hide Code</button>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center text-bold">Output</div>
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="row text-center">
+                                            <p class="text-bold" id="output"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <hr id="hrFactorial" />
+                                        <div class="col-md-12">
+                                            <div id="divFactorial">
+                                                <pre class="brush: js">
+                                                        $("#btnCalc").click(function () {
+                                                            //Step 1: Get the user data
+                                                            var input = Number($("#input").val());
+
+                                                            //Step 2: Do something with it
+                                                            var output = input;
+
+                                                            if (input > 0) {
+                                                                for (var loop = input - 1; loop > 1; loop--) {
+                                                            output *= loop;
+                                                            }
+                                                        }
+                                                            else if (input == 0) {
+                                                            output = 1;
+                                                            }
+                                                            else {
+                                                            output = "undefined";
+                                                            }
+
+
+                                                            //Step 3: Inform the user
+                                                            $("#output").text("The factorial of " + input + " is " + output);
+
+                                                        });
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Fizz-Buzz" class="tab-pane fade">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center h3">FizzBuzz Exercise</div>
+                                        <div class="row text-bold text-center">This exercise will calulate the Fizz-Buzz of 2 numbers</div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-3 text-bold">Number 1</div>
+                                            <div class="col-md-5">
+                                                <input id="num1" />
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-md-3 text-bold">Number 2</div>
+                                            <div class="col-md-5">
+                                                <input id="num2" />
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button id="btnMath1" class="btn btnWide btn-success">Calculate</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button id="btnClear2" class="btn btnWide btn-danger">Clear</button>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btnCodeFizz-Buzz" class="btn center btnWide btn-warning">Show/Hide Code</button>
+                                            </div>
+                                        </div>
+                                        <br />
+                                    </div>
+
+
+
+
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center text-bold">Fizz-Buzz Output</div>
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="row text-center">
+                                            <div class="text-bold" id="output1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="divFizz-Buzz">
+                                                <pre class="brush: js">
+                                                    $("#btnMath1").click(function () {
+                                                        var input1 = +$("#num1").val();
+                                                        var input2 = +$("#num2").val();
+                                                        var output = "";
+
+                                                        for (var loop = 1; loop <= 100; loop++) {
+                                                            output += FizzBuzz(input1, input2, loop) + ", ";
+                                                        }
+
+                                                        //Lop off the trailing comma
+                                                            output = output.substr(0, output.length - 2);
+
+                                                        //Step 3: Output
+                                                        $("#output1").text(output);
+
+                                                    });
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Reverse" class="tab-pane fade">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Palindrome Exercise</h3>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="center text-bold">This exercise will tell you if a certian word is a palindrome</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4 text-bold">Type a word</div>
+                                            <div class="col-md-5">
+                                                <input type="text" id="input1" />
+                                            </div>
+                                        </div>
+
+                                        <br />
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button id="btnCalc1" class="btn btn-success btnWide">Calculate</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button id="btnClear4" class="btn btn-danger btnWide">Clear</button>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btnCodeReverse" class="btn center btnWide btn-warning">Show/Hide Code</button>
+                                            </div>
+                                        </div>
+                                        <br />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12 center text-bold">Results</div>
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="text-bold center" id="output2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="divReverse">
+                                                <pre class="brush: js">
+                                                    ("#btnCalc1").click(function () {
+                                                        let reversed = "";
+                                                        let nospaces_str = "";
+                                                        let nospaces_rev = "";
+
+                                                        //get value
+                                                        let str = document.getElementById('input1').value;
+                                                        nospaces_str = str.replace(/\s+/g, '').toLowerCase();
+                                                        nospaces_rev = Reverse(nospaces_str).toLowerCase();
+
+                                                        //compare values
+                                                        if (nospaces_str == nospaces_rev) {
+                                                            document.getElementById('output2').innerText = nospaces_str + " reversed = " + nospaces_rev + ", therefore " + nospaces_str + " is a palindrome.";
+                                                        }
+                                                        else {
+                                                            document.getElementById('output2').innerText = nospaces_str + " reversed = " + nospaces_rev + ", therefore " + nospaces_str + " is not a palindrome.";
+                                                        }
+
+
+
+                                                        function Reverse(str) {
+                                                            let reversed = "";
+                                                            for (var i = str.length - 1; i >= 0; i--) {
+                                                                reversed += str[i];
+                                                            }
+                                                            return reversed;
+                                                        }
+
+                                                    });
+                                                    </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <script>
+        if (typeof (atob) == "undefined") {
+            document.write('<script src="~/lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
+            var atob = function (x) {
+                return base64.decode(x);
+            }
+        }
+    </script>
+    <script src="~/bower_components/less.js/dist/less.min.js"></script>
+    <script src="~/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/tween/tween.min.js"></script>
+    <script src="~/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/modernizr-edited.js"></script>
+    <script src="~/lib/SmoothScroll-1.2.1/SmoothScroll.js"></script>
+    <script src="~/bower_components/jquery-cookie/jquery.cookie.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="~/bower_components/jqBootstrapValidation/dist/jqBootstrapValidation-1.3.7.min.js"></script>
+    <script src="~/bower_components/minicolors/jquery.minicolors.min.js"></script>
+    <script src="~/bower_components/slick.js/slick/slick.min.js"></script>
+    <script src="~/bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
+    <script src="~/bower_components/textillate/assets/jquery.lettering.js"></script>
+    <script src="~/bower_components/textillate/assets/jquery.fittext.js"></script>
+    <script src="~/bower_components/textillate/jquery.textillate.js"></script>
+    <script src="~/lib/prism/prism.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+
+    <script src="~/Scripts/Custom.js"></script>
+    <script>
+        (function () {
+            var disableMobileAnimations = true;
+            var isWin = navigator.appVersion.indexOf("Win") !== -1;
+            if (isWin) $('html').addClass('win');
+            var ua = navigator.userAgent.toLowerCase();
+            var isChrome = ua.indexOf('chrome') > -1;
+            if (isChrome) $('html').addClass('chrome');
+            var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
+            if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
+            var isSafari = !isChrome && ua.indexOf('safari') !== -1;
+            if (isSafari) $('html').addClass('safari');
+            var isMobile = false; //Change false to Modernizr.touch if you want to disable animations on touchscreen devices;
+            if (isMobile) {
+                $('html').addClass('mobile');
+                if (disableMobileAnimations) $('html').addClass('poor-browser');
+            }
+            else {
+                $('html').addClass('non-mobile');
+            }
+            if (isWin && isSafari) {
+                $('html').addClass('flat-animation');
+            }
+        })();
+    </script>
+    <script src="~/scripts/script-bundle.js"></script>
+    <script>
+		if (Function('/cc_on return document.documentMode===9/')())
+		{
+			$('html').addClass('ie9');
+		}
+		if (Function('/cc_on return document.documentMode===10/')())
+		{
+			$('html').addClass('ie10');
+		}
+		if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
+		{
+			$('html').addClass('ie11');
+		}
+		</script>
+    <script>
+        $("#BlogLink").click(function () {
+            window.location.href = "https://mnblog.azurewebsites.net/";
+        });
+    </script>
+    </body>
+</html>
